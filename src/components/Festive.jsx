@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import clog from '../assets/Sigmamale.jpg';
 import shoe1 from '../assets/Alphafemale.jpg';
-import shoe from '../assets/Honeyoud.jpg';
-import shoe2 from '../assets/Alphafemale.jpg';
+import shoe from '../assets/ii31.png';
+import shoe2 from '../assets/ii2.png';
 const Festive = () => {
   return (
         <div className="w-[100%] items-center justify-center flex flex-col p-[3rem] pl-[2rem] pr-[2rem]">
@@ -17,22 +17,22 @@ const Festive = () => {
     
             <div className="w-[25%] rounded-md cursor-pointer" id="shop4">
               <Link to="/mens-perfumes">
-                <img src={clog} alt="" className="rounded-lg"/>
+                <img src={clog} alt="" className="rounded-lg h-[15rem]"/>
               </Link>
             </div>
             <div className="w-[25%] rounded-md cursor-pointer" id="shop4">
               <Link to="/womens-perfumes">
-                <img src={shoe1} alt="" className="rounded-lg"/>
+                <img src={shoe1} alt="" className="rounded-lg h-[15rem]"/>
               </Link>
             </div>
             <div className="w-[25%] rounded-md cursor-pointer" id="shop4">
               <Link to="/womens-perfumes">
-                <img src={shoe} alt="" className="rounded-lg"/>
+                <img src={shoe} alt="" className="rounded-lg h-[15rem]"/>
               </Link>
             </div>
             <div className="w-[25%] rounded-md cursor-pointer" id="shop4">
               <Link to="/womens-perfumes">
-                <img src={shoe2} alt="" className="rounded-lg"/>
+                <img src={shoe2} alt="" className="rounded-lg h-[15rem]"/>
               </Link>
             </div>
     

@@ -1,5 +1,5 @@
 import React from 'react'
-import men from '../assets/Sigmamale.jpg';
+import men from '../assets/ii1.png';
 import women from '../assets/Alphafemale.jpg';
 import unisex from '../assets/Honeyoud.jpg';
 import { Link } from 'react-router-dom';

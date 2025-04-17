@@ -80,21 +80,22 @@ import React, {useState} from "react";
 import { useEffect} from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext"; // Import Cart Context
-import cas1d from '../../assets/cas1d.jpg';
-import cas1d1 from '../../assets/cas1d1.jpg';
-import cas1d2 from '../../assets/cas1d2.jpg';
-import cas1d3 from '../../assets/cas1d3.jpg';
+import cas1d from '../../assets/Sigmamale.jpg';
+import cas1d1 from '../../assets/Sigmamale.jpg';
+import cas1d2 from '../../assets/Sigmamale.jpg';
+import cas1d3 from '../../assets/Sigmamale.jpg';
 import cas1d4 from '../../assets/cas1d4.jpg';
-import cas2d from '../../assets/cas2d.jpg';
-import cas2d1 from '../../assets/cas2d1.jpg';
-import cas2d2 from '../../assets/cas2d2.jpg';
-import cas2d3 from '../../assets/cas2d3.jpg';
+import cas2d from '../../assets/Alphafemale.jpg';
+import cas2d1 from '../../assets/Alphafemale.jpg';
+import cas2d2 from '../../assets/Alphafemale.jpg';
+import cas2d3 from '../../assets/Alphafemale.jpg';
 import cas2d4 from '../../assets/cas2d4.jpg';
-import cas3d from '../../assets/cas3d.jpg';
-import cas3d1 from '../../assets/cas3d1.jpg';
-import cas3d2 from '../../assets/cas3d2.jpg';
-import cas3d3 from '../../assets/cas3d3.jpg';
+import cas3d from '../../assets/Honeyoud.jpg';
+import cas3d1 from '../../assets/Honeyoud.jpg';
+import cas3d2 from '../../assets/Honeyoud.jpg';
+import cas3d3 from '../../assets/Honeyoud.jpg';
 import cas3d4 from '../../assets/cas3d4.jpg';
+import Footer from "../Footer";
 // import { useState } from "react";
 
 const cardsData = [
@@ -103,29 +104,87 @@ const cardsData = [
              img3: cas1d2,
              img4: cas1d3,
              img5: cas1d4,
-             title: 'BOSTON 01', description: 'Asian BOSTON-01 For Mens ', 
-             price: '1' , strike: '₹ 1499', off:'(99% off)' , gender: 'Mens', type: 'Casual Shoes' 
+             title: 'SIGMA MALE', description: 'SIGMA MALE For Mens ', 
+             price: '449' , strike: '₹ 799', off:'(30% off)' , gender: 'Mens'
     },
     { id: 2, img1: cas2d, 
              img2: cas2d1,
              img3: cas2d2,
              img4: cas2d3,
              img5: cas2d4, 
-             title: 'TAEZEN 11', description: 'Superhit', price: 999, gender: 'Mens', type: 'Casual Shoes' 
+             title: 'ALPHA FEMALE', description: 'ALPHA FEMALE for Womens', price: '449', gender: 'Womens' ,strike: '₹ 799', off:'(30% off)'
     },
     { id: 3, img1: cas3d, 
              img2: cas3d1,
              img3: cas3d2,
              img4: cas3d3,
              img5: cas3d4, 
-             title: 'MEXICO 11', description: 'Superhit', price: 1199, gender: 'Mens', type: 'Running Shoes' },
-    { id: 4, img: 'https://cdn.asianlive.in/product_assets/metacushion-02/white-orange-blend/primary-photo/primary%20photo_67703698272358630152.jpg', title: 'Metacushion 02', description: 'Running', price: 999, gender: 'Womens', type: 'Sports Shoes' },
-    { id: 5, img: 'https://cdn.asianlive.in/product_assets/twinspring-02/white-pista/primary-photo/primary%20photo_88711252959650388016.jpg', title: 'Twinspring 02', description: 'SuperHit', price: 899, gender: 'Kids', type: 'Casual Shoes' },
-    { id: 6, img: 'https://cdn.asianlive.in/product_assets/superstar-01/black/primary-photo/primary%20photo_38468568250429343540.jpg', title: 'Superstar 01', description: 'SuperHit', price: 899, gender: 'Mens', type: 'Casual Shoes' },
-    { id: 7, img: 'https://cdn.asianlive.in/product_assets/carbon-02/black/primary-photo/primary%20photo_14204848291849555119.jpg', title: 'Carbon 02', description: 'Running', price: 1199, gender: 'Mens', type: 'Casual Shoes' },
-    { id: 8, img: 'https://cdn.asianlive.in/product_assets/universe-01/white-mint/primary-photo/primary%20photo_3680796952931366979.jpg', title: 'Universe 01', description: 'Running', price: 899, gender: 'Mens', type: 'Running Shoes' },
-    { id: 9, img: 'https://cdn.asianlive.in/product_assets/superkick-02/dark-grey/primary-photo/primary%20photo_39810834419038815955.jpg', title: 'SuperKick 02', description: 'Running', price: 999, gender: 'Kids', type: 'Casual Shoes' },
-    { id: 10, img: 'https://cdn.asianlive.in/product_assets/chrome-01/light-green/primary-photo/primary%20photo_39954232989280695893.jpg', title: 'Chrome 01', description: 'Running', price: 999, gender: 'Kids', type: 'Casual Shoes' },
+             title: 'HONEY OUD UNISEX', description: 'HONEY OUD for Unisex', price: '449', gender: 'Unisex', strike: '₹ 799', off:'(30% off)' },
+    { id: 4, img1: cas1d, 
+                img2: cas1d1,
+                img3: cas1d2,
+                img4: cas1d3,
+                img5: cas1d4,
+                title: 'SIGMA MALE', description: 'SIGMA MALE For Mens ', 
+                price: '449' , strike: '₹ 799', off:'(30% off)' , gender: 'Mens'
+       },
+    { id: 5, img1: cas3d, 
+            img2: cas3d1,
+            img3: cas3d2,
+            img4: cas3d3,
+            img5: cas3d4, 
+            title: 'HONEY OUD UNISEX', description: 'HONEY OUD for Unisex', price: '449', gender: 'Unisex', strike: '₹ 799', off:'(30% off)' },
+    { id: 6, img1: cas2d, 
+                img2: cas2d1,
+                img3: cas2d2,
+                img4: cas2d3,
+                img5: cas2d4, 
+                title: 'ALPHA FEMALE', description: 'ALPHA FEMALE for Womens', price: '449', gender: 'Womens' ,strike: '₹ 799', off:'(30% off)'
+    },
+    { id: 7, img1: cas3d, 
+            img2: cas3d1,
+            img3: cas3d2,
+            img4: cas3d3,
+            img5: cas3d4, 
+            title: 'HONEY OUD UNISEX', description: 'HONEY OUD for Unisex', price: '449', gender: 'Unisex', strike: '₹ 799', off:'(30% off)' },
+    { id: 8, img1: cas1d, 
+                img2: cas1d1,
+                img3: cas1d2,
+                img4: cas1d3,
+                img5: cas1d4,
+                title: 'SIGMA MALE', description: 'SIGMA MALE For Mens ', 
+                price: '449' , strike: '₹ 799', off:'(30% off)' , gender: 'Mens'
+    },
+    { id: 9, img1: cas2d, 
+            img2: cas2d1,
+            img3: cas2d2,
+            img4: cas2d3,
+            img5: cas2d4, 
+            title: 'ALPHA FEMALE', description: 'ALPHA FEMALE for Womens', price: '449', gender: 'Womens' ,strike: '₹ 799', off:'(30% off)'
+    },
+    { id: 10, img1: cas3d, 
+        img2: cas3d1,
+        img3: cas3d2,
+        img4: cas3d3,
+        img5: cas3d4, 
+        title: 'HONEY OUD UNISEX', description: 'HONEY OUD for Unisex', price: '449', gender: 'Unisex', strike: '₹ 799', off:'(30% off)' },
+    
+    { id: 11, img1: cas2d, 
+            img2: cas2d1,
+            img3: cas2d2,
+            img4: cas2d3,
+            img5: cas2d4, 
+            title: 'ALPHA FEMALE', description: 'ALPHA FEMALE for Womens', price: '449', gender: 'Womens' ,strike: '₹ 799', off:'(30% off)'
+    },
+
+    { id: 8, img1: cas1d, 
+        img2: cas1d1,
+        img3: cas1d2,
+        img4: cas1d3,
+        img5: cas1d4,
+        title: 'SIGMA MALE', description: 'SIGMA MALE For Mens ', 
+        price: '449' , strike: '₹ 799', off:'(30% off)' , gender: 'Mens'
+    },
 ];
 
 const ProductDetailsPage = () => {
@@ -156,60 +215,66 @@ const ProductDetailsPage = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen p-4 w-[100%]">
-            {loading ? (
-                <div className="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center z-50">
-                    <div className="flex items-center space-x-3">
-                        <svg aria-hidden="true" className="w-6 h-6 text-gray-500 animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591..." fill="#E5E7EB" />
-                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116..." fill="currentColor" />
-                        </svg>
-                        <span className="text-gray-600 text-lg font-medium">Loading...</span>
-                    </div>
-                </div>
-            ) : (
-            <div className="w-[90%] items-start justify-center flex ">
-                {/* left div */}
-                <div className="w-[70%] border p-4 shadow-lg rounded-lg flex flex-col">
-                    <div className="flex p-2">
-                        <img src={product.img1} alt="" className="w-full h-[18rem] object-cover rounded-md" />
-                        <img src={product.img2} alt="" className="w-full h-[18rem] object-cover rounded-md" />
-                    </div>
-                    <div className="flex p-2">
-                        <img src={product.img3} alt="" className="w-full h-[18rem] object-cover rounded-md" />
-                        <img src={product.img4} alt="" className="w-full h-[18rem] object-cover rounded-md" />
-                    </div>
-                    <div className="flex p-2">
-                        <img src={product.img2} alt="" className="w-full h-[18rem] object-cover rounded-md" />
-                        <img src={product.img1} alt="" className="w-full h-[18rem] object-cover rounded-md" />
-                    </div>
-                </div>
-                
-                {/* right div */}
-                <div className="w-[30%] items-center justify-center flex flex-col p-6 ">
-                    <div className="pb-4 space-y-[2px]">
-                        <div className="space-y-[-5px] flex flex-col">
-                            <h2 className="text-xl font-medium p-2">{product.title}</h2>
-                            <p className="text-gray-500 text-justify text-[12px] p-2">{product.description}</p>
-                        </div>
-                        <div className="flex space-x-[10px] p-2">
-                            <p className="text-black font-semibold text-[18px]">₹ {product.price}.00</p>
-                            <p className="text-gray-400 font-normal text-[18px] gap-2">MRP<strike>{product.strike}</strike></p>
-                            <p className="text-green-600 font-normal text-[18px]">{product.off}</p>
-                        </div>
-                        <div className="space-y-[-10px]">
-                            <p className="text-black font-medium p-2">{product.type}</p>
-                            <p className="text-gray-400 font-normal p-2">Inclusive of all taxes</p>
+        <div>
+            <div className="flex items-center justify-center min-h-screen p-4 w-[100%] mt-[8rem] mb-[4rem]" id="pd1">
+                {loading ? (
+                    <div className="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center z-50">
+                        <div className="flex items-center space-x-3">
+                            <svg aria-hidden="true" className="w-6 h-6 text-gray-500 animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591..." fill="#E5E7EB" />
+                                <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116..." fill="currentColor" />
+                            </svg>
+                            <span className="text-gray-600 text-lg font-medium">Loading...</span>
                         </div>
                     </div>
+                ) : (
+                <div className="w-[90%] items-start justify-center flex " id="pd2">
+                    {/* left div */}
+                    <div className="w-[70%] border p-4 shadow-lg rounded-lg flex flex-col " id="pd3">
+                        <div className="flex p-2" id="pd4">
+                            <img src={product.img1} alt="" className="w-full h-[18rem] object-scale-down rounded-md" />
+                            <img src={product.img2} alt="" className="w-full h-[18rem] object-scale-down rounded-md" />
+                        </div>
+                        <div className="flex p-2" id="pd4">
+                            <img src={product.img3} alt="" className="w-full h-[18rem] object-scale-down rounded-md" />
+                            <img src={product.img4} alt="" className="w-full h-[18rem] object-scale-down rounded-md" />
+                        </div>
+                        <div className="flex p-2" id="pd4">
+                            <img src={product.img2} alt="" className="w-full h-[18rem] object-scale-down rounded-md" />
+                            <img src={product.img1} alt="" className="w-full h-[18rem] object-scale-down rounded-md" />
+                        </div>
+                    </div>
+                    
+                    {/* right div */}
+                    <div className="w-[30%] items-center justify-center flex flex-col p-6 " id="pd5">
+                        <div className="pb-4 space-y-[2px] border rounded-md">
+                            <div className="space-y-[-5px] flex flex-col" id="pd7">
+                                <h2 className="text-xl font-medium p-2">{product.title}</h2>
+                                <p className="text-gray-500 text-justify text-[12px] p-2">{product.description}</p>
+                            </div>
+                            <div className="flex space-x-[10px] p-2">
+                                <p className="text-black font-semibold text-[18px]">₹ {product.price}.00</p>
+                                <p className="text-gray-400 font-normal text-[18px] gap-2">MRP<strike>{product.strike}</strike></p>
+                                <p className="text-green-600 font-normal text-[18px]">{product.off}</p>
+                            </div>
+                            <div className="space-y-[-10px]" id="pd7">
+                                <p className="text-black font-medium p-2">{product.type}</p>
+                                <p className="text-gray-400 font-normal p-2">Inclusive of all taxes</p>
+                            </div>
+                        </div>
 
-                    <button className="bg-blue-600 text-[18px] p-3 items-center justify-center pl-3 pr-3 text-white w-full rounded-lg"
-                        onClick={handleAddToCart}>
-                        Add To Cart
-                    </button>
+                        <button className="bg-blue-600 text-[16px] p-2 items-center justify-center mt-[1rem] text-white w-[50%] rounded-lg" id="pd6"
+                            onClick={handleAddToCart}>
+                            Add To Cart
+                        </button>
+                    </div>
                 </div>
+                )}
             </div>
-            )}
+
+            <div>
+                <Footer/>
+            </div>
         </div>
     );
 };

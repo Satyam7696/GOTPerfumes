@@ -106,14 +106,14 @@ const CardSlider = () => {
       img: sigma,
       title: 'Sigma Male',
       description: 'Perfumes',
-      price: '₹ 299.00',
+      price: '₹ 449.00',
     },
     {
       id: 2,
       img: alpha,
       title: 'Alpha Female',
       description: 'Perfumes ',
-      price: '₹ 299.00',
+      price: '₹ 449.00',
     },
 
     {
@@ -121,7 +121,7 @@ const CardSlider = () => {
       img: honey,
       title: 'Honey Oud',
       description: 'Unisex Perfume',
-      price: '₹ 299.00',
+      price: '₹ 449.00',
     },
     
     {
@@ -129,7 +129,7 @@ const CardSlider = () => {
       img: alpha,
       title: 'Alpha Female',
       description: 'Perfumes',
-      price: '₹ 299.00',
+      price: '₹ 449.00',
     },
 
     {
@@ -137,14 +137,14 @@ const CardSlider = () => {
         img: sigma,
         title: 'Sigma Male',
         description: 'Perfumes',
-        price: '₹ 299.00',
+        price: '₹ 449.00',
       },
       {
         id: 6,
         img: honey,
         title: 'Honey Oud',
         description: 'Unisex Perfume',
-        price: '₹ 299.00',
+        price: '₹ 449.00',
       },
 
       {
@@ -152,14 +152,14 @@ const CardSlider = () => {
         img: alpha,
         title: 'Alpha Female',
         description: 'Perfumes',
-        price: '₹ 299.00',
+        price: '₹ 449.00',
       },
       {
         id: 8,
         img: honey,
         title: 'Honey Oud',
         description: 'Unisex Perfume',
-        price: '₹ 299.00',
+        price: '₹ 449.00',
       },
 
       {
@@ -167,7 +167,7 @@ const CardSlider = () => {
         img: sigma,
         title: 'Sigma Male',
         description: 'Perfumes',
-        price: '₹ 299.00',
+        price: '₹ 449.00',
       },
 
       {
@@ -175,7 +175,7 @@ const CardSlider = () => {
         img: honey,
         title: 'Honey Oud',
         description: 'Unisex Perfume',
-        price: '₹ 299.00',
+        price: '₹ 449.00',
       },
   
   ];
@@ -190,7 +190,7 @@ const CardSlider = () => {
                 // onMouseLeave={() => setHoveredCard(null)}
           > {/* Each card takes 50% width of the slider */}
             <div className=" rounded-lg overflow-hidden shadow-lg p-3 border border-gray-300">
-              <img src={hoveredCard === card.id ? card.hoverImg : card.img} alt={card.title} className="w-full h-48 object-cover" />
+              <img src={hoveredCard === card.id ? card.hoverImg : card.img} alt={card.title} className="w-full h-48 object-scale-down" />
               <div className="p-4 mt-[2rem]">
                 <h2 className=" text-gray-600 text-[12px]">{card.title}</h2>
                 <p className="text-[12px] font-medium text-black mt-2">{card.description}</p>

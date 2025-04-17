@@ -1,6 +1,7 @@
 import React from "react";
 import { useCart } from "../components/context/CartContext";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const CheckoutPage = () => {
     const { cart, clearCart } = useCart();
@@ -62,13 +63,14 @@ const CheckoutPage = () => {
     
 
     return (
-        <div className="p-6">
-            <h2 className="text-2xl font-bold mb-4">Checkout</h2>
+        <div>
+        <div className="p-6 mt-[7rem] w-[50%] mb-4" id="check1">
+            <h2 className="text-2xl font-bold mb-4 ">Checkout</h2>
 
             {cart.length === 0 ? (
                 <p className="text-gray-500">Your cart is empty. Add some products before checking out! 🛒</p>
             ) : (
-                <div className="border p-4 rounded-lg">
+                <div className="border p-4 rounded-lg" id="che1">
                     <h3 className="text-lg font-semibold mb-4">Order Summary</h3>
 
                     {cart.map((item) => (
@@ -85,12 +87,17 @@ const CheckoutPage = () => {
 
                     <button
                         onClick={handlePayment}
-                        className="mt-6 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800 w-full"
-                    >
+                        className="mt-6 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800 w-[30%] justify-end items-end"
+                        id="check2">
                         Pay Now
                     </button>
                 </div>
             )}
+        </div>
+
+        <div>
+            <Footer/>
+        </div>
         </div>
     );
 };

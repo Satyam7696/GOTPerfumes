@@ -13,6 +13,10 @@
       }
     }
 
+    #up1{
+      margin-top: 80px;
+    }
+
     #hero2{
       p{
         font-size:10px;
@@ -23,7 +27,7 @@
       padding:1rem;
       padding-left: 1rem;
       padding-right: 1rem;
-      border: 1px solid green;
+      /* border: 1px solid green; */
     }
 
     #shop2{
@@ -43,6 +47,9 @@
 
     #shop4{
       width:90%;
+      img{
+        height: 10rem;
+      }
     }
 
     #fest1{
@@ -96,6 +103,7 @@
       flex-direction: column;
       padding: 10px;
       width: 80%;
+      gap:0 3px;
       /* gap: 0 16px; */
       img{
         /* border: 1px solid red; */
@@ -246,10 +254,10 @@
     }
 
     #nav1{
-      width:13rem;
+      width:3.5rem;
       /* border : 1px solid blue; */
       img{
-        width:13rem;
+        width:3.5rem;
         height:3rem;
       }
     }
@@ -303,7 +311,7 @@
     }
   
     #men2{
-      translate: -2rem;
+      translate: -1rem -4rem;
       width:50%;
     }
   
@@ -389,6 +397,172 @@
         translate: 0 -2rem;
       }
     }
+
+    #dis1{
+      justify-content: center;
+      align-items: center;
+      h3{
+        padding:3rem;
+        text-align: center;
+        translate: 0 9px;
+        font-size: 24px;
+      }
+    }
+
+    #dis2{
+      h3{
+        padding:3rem;
+        font-size: 1.5rem;
+        translate: 0 9px;
+      }
+    }
+
+    #got21{
+      flex-direction: column;
+      padding: 10px;
+      width: 80%;
+      gap:0 3px;
+      /* gap: 0 16px; */
+      img{
+        /* border: 1px solid red; */
+        width:6.2rem;
+        height: 4.5rem;
+      }
+      p{
+        translate: 0 1.8rem;
+        font-size: 12px;
+      }
+    }
+
+    #up2{
+      translate: 0 -4rem;
+    }
+
+    #wish1{
+      width:80%;
+      /* height: 50%; */
+    }
+
+    #ct1{
+      h2{
+        font-size: 12px;
+      }
+      p{
+        font-size: 10px;
+      }
+    }
+
+    #ct2{
+      margin-top: 2rem;
+    }
+
+    /* #ct2{
+      translate: 0 1rem;
+      border: 1px solid red;
+      h1{
+        translate: 0 -2rem;
+      }
+      p{
+        translate: 0 -2rem;
+      }
+      img{
+        width:20rem;
+        height: 13rem;
+      }
+    } */
+
+    #che1{
+      /* 
+       */
+       translate: 0 2rem;
+    }
+
+    #pd1{
+      translate: 0 -2rem;
+      padding:10px;
+    }
+
+    #pd2{
+      width:100%;
+      flex-direction: column;
+    }
+
+    #pd3{
+      padding:10px;
+      width:100%;
+    }
+
+    #pd4{
+      /* flex-direction: column; */
+      gap:10px;
+      img{
+        height:6rem;
+        /* padding:5px; */
+        object-fit: cover;
+      }
+    }
+
+    #pd5{
+      width:100%;
+      padding:1rem;
+    }
+
+    #pd6{
+      font-size: 12px;
+      padding-left: 1px;
+      padding-right: 6px;
+      width:50%;
+      margin-top:3px;
+    }
+
+    #car1{
+      translate: 0 -3rem;
+      padding:10px;
+    }
+
+    #rem{
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      font-size: 10px;
+      border-radius: 5px;
+    }
+
+    #but{
+      padding:2px;
+      height:22px;
+      text-align: center;
+      font-size: 8px;
+    }
+
+    #pd7{
+      line-height: 2px;
+    }
+
+    #login1{
+      width:90%;
+      translate: -16px;
+    }
+
+    #login2{
+      /* width:30rem; */
+      img{
+        /* width:30rem; */
+      }
+    }
+
+    #check1{
+      width:100%;
+    }
+  
+    #check2{
+      width:50%;
+    }
+
+    #sendotp{
+      width:50%;
+    }
 }
 
 @media(max-width:376px) and (min-width:322px){
@@ -399,6 +573,15 @@
       width:100%;
     }
   }
+
+  #sendotp{
+    width:50%;
+  }
+
+  #check2{
+    width:100%;
+  }
+
 
   #hero2{
     p{
@@ -437,7 +620,9 @@
       font-size:18px;
     }
     p{
-      font-size:14px;
+      font-size:12px;
+      padding-left: 2rem;
+      padding-right: 2rem;
       text-align: center;
     }
   }
@@ -483,10 +668,29 @@
     flex-direction: column;
     padding: 10px;
     width: 80%;
+    gap:0 3px;
     img{
       /* border: 1px solid red; */
       width:6.2rem;
       height: 6rem;
+      translate: -2px;
+    }
+    p{
+      translate: 0 1.8rem;
+      font-size: 12px;
+    }
+  }
+
+  #got21{
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+    gap:0 3px;
+    /* gap: 0 16px; */
+    img{
+      /* border: 1px solid red; */
+      width:6.2rem;
+      height: 4.5rem;
     }
     p{
       translate: 0 1.8rem;
@@ -499,6 +703,8 @@
       font-size:14px;
       text-align: center;
       padding: 10px;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
   }
 
@@ -515,8 +721,8 @@
     /* translate: -1rem; */
     background-color: white;
     img{
-      translate: 0px -3.2rem;
-      padding: 10px;
+      translate: 0px -4.2rem;
+      padding: 14px;
       margin-right: 1rem;
     }
   }
@@ -632,10 +838,10 @@
   }
 
   #nav1{
-    width:4rem;
+    width:3.5rem;
     /* border : 1px solid blue; */
     img{
-      width:4rem;
+      width:3.5rem;
       height:3rem;
     }
   }
@@ -689,7 +895,7 @@
   }
 
   #men2{
-    translate: -2rem;
+    translate: -1rem -4rem;
     width:50%;
   }
 
@@ -777,19 +983,21 @@
   }
 
   #up1{
-    translate: 0 -3rem;
+    translate: 0 -1.2rem;
   }
 
   #dis1{
     h3{
-      font-size: 1.3rem;
+      font-size: 26px;
+      padding:4rem;
+      translate: 0 -10px;
     }
   }
 
   #dis2{
     h3{
-      font-size: 1.3rem;
-      translate: 0 -5px;
+      font-size: 26px;
+      translate: 0 -15px;
       padding:5rem;
       /* padding-top:4rem; */
     }
@@ -798,6 +1006,115 @@
   #up2{
     translate: 0 -4rem;
   }
+
+  #wish1{
+    width:80%;
+    /* height: 50%; */
+  }
+
+  #wish2{
+    padding:6px;
+    padding-left: -2rem;
+    padding-left: -2rem;
+    img{
+      height:12rem;
+      width: 100%;
+      object-fit: scale-down;
+      /* border:1px solid grey; */
+    }
+  }
+
+  #pd1{
+    translate: 0 6rem;
+    padding:10px;
+  }
+
+  #pd2{
+    width:100%;
+    flex-direction: column;
+    translate: 0 -8rem;
+  }
+
+  #pd3{
+    padding:10px;
+    width:100%;
+  }
+
+  #pd4{
+    /* flex-direction: column; */
+    /* gap:10px; */
+    img{
+      height:6rem;
+      /* padding:5px; */
+      object-fit:scale-down;
+    }
+  }
+
+  #pd5{
+    width:100%;
+    padding:1rem;
+  }
+
+  #pd6{
+    font-size: 12px;
+    padding-left: 1px;
+    padding-right: 6px;
+    width:50%;
+    margin-top:3px;
+  }
+
+  #pd7{
+    line-height: 2px;
+  }
+
+  #ct1{
+    h2{
+      font-size: 12px;
+    }
+    p{
+      font-size: 10px;
+    }
+  }
+
+  #ct2{
+    margin-top: 2rem;
+  }
+
+  #car1{
+    translate: 0 -3rem;
+    padding:10px;
+  }
+
+  #rem{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  #login1{
+    width:90%;
+    translate: -16px;
+  }
+
+  #login2{
+    /* width:30rem; */
+    img{
+      /* width:30rem; */
+    }
+  }
+
+  #check1{
+    width:100%;
+  }
+
+  #check2{
+    width:30%;
+  }
+
+  
 }
 
 @media(max-width:426px) and (min-width:377px){
@@ -839,6 +1156,9 @@
 
   #shop4{
     width:90%;
+    /* img{
+      height:10rem;
+    } */
   }
 
   #fest1{
@@ -847,6 +1167,8 @@
     }
     p{
       font-size:14px;
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
       text-align: center;
     }
   }
@@ -892,13 +1214,33 @@
     flex-direction: column;
     padding: 10px;
     width: 80%;
+    gap:0 3px;
     img{
       /* border: 1px solid red; */
       width:6.2rem;
       height: 6rem;
+      translate: -2px;
     }
     p{
       translate: 0 1.8rem;
+      font-size: 12px;
+    }
+  }
+
+  #got21{
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+    gap:0 3px;
+    /* gap: 0 16px; */
+    img{
+      /* border: 1px solid red; */
+      width:6.2rem;
+      height: 4.5rem;
+      translate: 0 -1.5rem;
+    }
+    p{
+      translate: 0 10px;
       font-size: 12px;
     }
   }
@@ -924,7 +1266,9 @@
     /* translate: -1rem; */
     background-color: white;
     img{
-      translate: 0px -4.3rem;
+      width:80%;
+      height: 100%;
+      translate: 10px -3.8rem;
       padding: 10px;
       margin-right: 1rem;
     }
@@ -1138,7 +1482,7 @@
   }
 
   #up1{
-    translate: 0 -2.5rem;
+    translate: 0 -10px;
   }
 
   #up2{
@@ -1192,8 +1536,134 @@
       translate: 0 -2rem;
     }
   }
+
+  #dis2{
+    h3{
+      font-size: 26px;
+      translate: 0 -15px;
+      padding:5rem;
+      /* padding-top:4rem; */
+    }
+  }
+
+  #pd1{
+    translate: 0 6rem;
+    padding:10px;
+  }
+
+  #pd2{
+    width:100%;
+    flex-direction: column;
+    translate: 0 -8rem;
+  }
+
+  #pd3{
+    padding:10px;
+    width:100%;
+  }
+
+  #pd4{
+    /* flex-direction: column; */
+    /* gap:10px; */
+    img{
+      height:6rem;
+      /* padding:5px; */
+      object-fit:scale-down;
+    }
+  }
+
+  #pd5{
+    width:100%;
+    padding:1rem;
+    align-items: start;
+    translate: -14px;
+  }
+
+  #pd6{
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 1px;
+    padding-right: 6px;
+    width:30%;
+    margin-top:3px;
+  }
+
+  #pd7{
+    line-height: 2px;
+  }
+
+  #ct1{
+    h2{
+      font-size: 12px;
+    }
+    p{
+      font-size: 10px;
+    }
+  }
+
+  #ct2{
+    /* margin-top: 2rem; */
+  }
+
+  #car1{
+    translate: 0 -3rem;
+    padding:10px;
+  }
+
+  #rem{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  #login1{
+    width:90%;
+    translate: -16px;
+  }
+
+  #login2{
+    /* width:30rem; */
+    img{
+      /* width:30rem; */
+    }
+  }
+
+  #check1{
+    width:100%;
+  }
+
+  #check2{
+    width:40%;
+  }
+
+  #che1{
+    h3{
+      font-weight: 700;
+    }
+  }
+
+  #wish1{
+    width:80%;
+    /* height: 50%; */
+  }
+
+  #wish2{
+    padding:6px;
+    padding-left: -2rem;
+    padding-left: -2rem;
+    img{
+      height:12rem;
+      width: 100%;
+      object-fit: scale-down;
+      /* border:1px solid grey; */
+    }
+  }
 }
 
+/* tablet device responsive */
 @media(max-width:769px) and (min-width:427px){
   #hero1{
     img{
@@ -1241,13 +1711,13 @@
 
   #foot1{
     flex-direction: row;
-    border : 1px solid green;
+    /* border : 1px solid green; */
   }
 
   #foot2{
     width: 33%;
     translate: 0 10px;
-    border: 1px solid white ;
+    /* border: 1px solid white ; */
     /* flex-direction: row; */
   }
 
@@ -1256,7 +1726,7 @@
     padding:14px;
     padding-left: 10px;
     padding-bottom: 6px;
-    border: 1px solid rgb(210, 228, 78) ;
+    /* border: 1px solid rgb(210, 228, 78) ; */
     p{
       font-size:12px;
     }
@@ -1266,13 +1736,13 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   #foot4{
     width:33%;
     /* translate: 1px; */
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
   }
 
   #foot5{

@@ -3,7 +3,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
-import img1 from '../assets/Perfumes.jpg';
+import img1 from '../assets/perfumesrg.png';
 import { FaPhoneAlt } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
 
         <div className=" p-6">
-           <p className="text-[12px]">All Rights Reserved by GOT Perfumes Pvt. Ltd.</p>
+           <p className="text-[12px]">All Rights Reserved by GOTLife Pvt. Ltd.</p>
             <p className="text-center text-[12px]">2025 © Copyright</p>
         </div>
 

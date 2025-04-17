@@ -37,6 +37,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";  // Import useNavigate from react-router-dom
+import r3 from '../assets/r3.jpg';
 
 const Login = () => {
     const [mobileNumber, setMobileNumber] = useState("");
@@ -80,10 +81,10 @@ const Login = () => {
 
     return (
         <div>
-            <div className="w-full flex items-center justify-center mt-3">
-                <div className="w-[35%] shadow-lg flex flex-col pb-6 px-6 translate-x-[1rem]">
-                    <div className="items-center justify-center">
-                        <img src="https://www.asianfootwears.com/_next/image?url=https%3A%2F%2Fcdn.asianlive.in%2Fdigital-website%2FCoupon-banner_26874718888615670254.jpg&w=1080&q=75" alt=""/>
+            <div className="w-full flex items-center justify-center mt-[8rem] ">
+                <div className="w-[35%] shadow-lg flex flex-col pb-6 px-6 translate-x-[1rem] " id="login1">
+                    <div className="items-center justify-center" id="login2">
+                        <img src={r3} alt=""/>
                     </div>
                     <p className="text-[18px] font-normal mb-4 pt-2 ">Login/SignUp</p>
                     
@@ -101,9 +102,9 @@ const Login = () => {
 
                     {/* Send OTP Button */}
                     <button
-                        className="bg-blue-500 text-white font-bold py-2 mt-4 rounded-md w-full"
+                        className="bg-blue-500 text-white font-bold py-2 mt-4 rounded-md w-[30%] items-center justify-center"
                         onClick={handleSendOtp}
-                    >
+                        id="sendotp">
                         SEND OTP
                     </button>
 

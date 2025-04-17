@@ -9,11 +9,11 @@ import CardSlider4 from '../components/Slider/CardSlider4';
 import CardSlider from '../components/Slider/CardSlider';
 import Whyquick from '../components/WhyGot';
 import insta from '../assets/instagram.jpg';
-import im111 from '../assets/Brand_logo.jpg';
+import im111 from '../assets/perfumesrg.png';
 import art from '../assets/Art.jpg';
 import bann1 from '../assets/alpha.jpg';
-import bann2 from '../assets/bann2.jpeg';
-import bann3 from '../assets/bann3.jpeg';
+import bann2 from '../assets/r3.jpg';
+import bann3 from '../assets/r4.jpg';
 import bann4 from '../assets/bann4.jpeg';
 import PerfumeCollection from '../components/PerfumeCollection';
 import WhyGot from '../components/WhyGot';
@@ -45,15 +45,14 @@ const Home = () => {
       <div className="w-[100%] flex flex-col items-center justify-center overflow-x-hidden">
 
         {/* hero section */}
-        <div className="w-[100%] flex flex-col items-center justify-center bg-orange-100 mt-[8rem]" id="up1">
+        <div className="w-[100%] flex flex-col items-center justify-center bg-orange-100 mt-[100px]" id="up1">
           <div className="bg-black w-[100%] p-[3px]" id="hero2">
             <p className="text-white font-normal text-[14px] text-center ">Winter Sale Upto 60% Off  and  Buy 2 get extra discount instantly!</p>
           </div>
           <div id="hero1" className="w-[100%]">
-            <img src={images[currentIndex]} alt="slider image" className="w-[100%] h-[550px] transition-all duration-500 ease-in-out cursor-pointer" />
+            <img src={images[currentIndex]} alt="slider image" className="w-[100%] h-[500px] transition-all duration-500 ease-in-out cursor-pointer " />
           </div>
           {/* <video src={video[0]} autoPlay loop muted className="w-full h-auto transition-all duration-500 ease-in-out cursor-pointer" /> */}
-
         </div>
 
         <div className="w-[100%]">
@@ -137,7 +136,7 @@ const Home = () => {
                         <span className="text-blue-500 text-[14px]">@gotperfumes</span>
                     </a>
                     <p className="text-[14px]">for more info about product release</p>
-                    <button className="w-[80%] bg-blue-500 text-center text-[15px] font-normal rounded-md text-white mt-4 p-[2px]"> <a href="https://www.instagram.com/gotperfumes/">Follow</a></button>
+                    <button className="w-[30%] bg-blue-500 text-center text-[15px] font-normal rounded-md text-white mt-4 p-[2px]"> <a href="https://www.instagram.com/gotperfumes/">Follow</a></button>
                  </div>
             </div>
 

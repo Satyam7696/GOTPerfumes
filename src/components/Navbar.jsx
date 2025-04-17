@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logosss from "../assets/Perfumes.jpg";
+import logosss from "../assets/Perfumes.png";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { PiShoppingCartThin } from "react-icons/pi";
@@ -33,7 +33,7 @@ const Navbar = () => {
 
             <div className="" id="nav1">
                 <Link to="/">
-                    <img src={logosss} alt="" className="w-[6rem] h-[5.5rem] " />
+                    <img src={logosss} alt="" className="w-[4.5rem] h-[4rem] " />
                 </Link>
             </div>
 
@@ -160,7 +160,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center justify-center gap-4 cursor-pointer" id="nav6">
-                <CiSearch className="w-[2rem] h-[1.8rem]" id="nav5"/>
+                {/* <CiSearch className="w-[2rem] h-[1.8rem]" id="nav5"/> */}
                 <div className="relative">
                     <Link to="/wishlist" className=" text-lg flex items-center">
                         <CiHeart className=" w-[2rem] h-[1.8rem]" id="nav5" />

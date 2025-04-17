@@ -16,16 +16,16 @@ const Wishlist = () => {
     };
 
     return (
-        <div className="w-full mx-auto my-2 mt-4 pl-4 pb-8">
+        <div className="w-full mx-auto my-2 mt-[8rem] pl-4 pb-8 " >
             <h2 className="text-2xl font-bold mb-4">Your Wishlist</h2>
             {wishlist.length === 0 ? (
                 <p className="text-gray-600">No items in your wishlist.</p>
             ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 " id="wish1">
                     {wishlist.map((item) => (
-                        <div key={item.id} className="rounded-lg overflow-hidden shadow-lg p-3 border border-gray-300 hover:shadow-xl">
+                        <div key={item.id} className="rounded-lg overflow-hidden shadow-lg p-3 border border-gray-300 hover:shadow-xl " id="wish2">
                             <Link to={`/product-details-page/${item.id}`}>
-                                <img src={item.img} alt={item.title} className="w-full h-48 object-cover" />
+                                <img src={item.img} alt={item.title} className="w-full h-48 object-scale-down" />
                             </Link>
                             <div className="p-4">
                                 <h2 className="text-gray-700 text-[14px] font-semibold">{item.title}</h2>
